@@ -14,3 +14,5 @@ python manage.py runserver
 
 
 python manage.py startapp <app-name>
+
+python manage.py startapp site_main
