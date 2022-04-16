@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'theteamapp.apps.site_main',
+    'theteamapp.apps.resource',
 ]
 
 MIDDLEWARE = [
