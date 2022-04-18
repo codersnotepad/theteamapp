@@ -7,8 +7,9 @@ ROLE_CHOICES = [
     ('SM', 'Senior Manager'),
 ]
 
-class Resource_Fact(models.Model):
+class Fact(models.Model):
     name = models.CharField(max_length=100, unique=False, null=False)
+    employee_id = models.IntegerField(null=False,default=9999)
     role = models.CharField(max_length=20, unique=False, null=False, choices=ROLE_CHOICES)
     python = models.IntegerField(null=False,default=0)
     r = models.IntegerField(null=False,default=0)

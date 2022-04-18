@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Emp ID</th>
+        <th>Python</th>
+        <th>R</th>
+        <th>Java</th>
+        <th>Power BI</th>
+    </tr>
+    {% for m in most_recent %}
+        <tr>
+            <td>{{m.name}}</td>
+            <td>{{m.role}}</td>
+            <td>{{m.employee_id}}</td>
+            <td>{{m.python}}</td>
+            <td>{{m.r}}</td>
+            <td>{{m.java}}</td>
+            <td>{{m.powerbi}}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
